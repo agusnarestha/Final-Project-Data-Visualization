@@ -9,7 +9,7 @@ from bokeh.layouts import widgetbox, row, gridplot
 from bokeh.models import DateRangeSlider, Select
 from bokeh.models.widgets import Tabs, Panel
 
-data = pd.read_csv('data/covid-variants.csv')
+data = pd.read_csv('app/data/covid-variants.csv')
 data['date']= pd.to_datetime(data['date']).dt.date
 
 
